@@ -1,4 +1,4 @@
-# Emotion-Recognition-
+# An Investigation of Ensemble Methods in Emotion Recognition
 In this work, we present unimodal systems based on audio for continuous recognition of human
 affect. Automatic analysis of human affective state has increased popularity over the last few
 years. Particularly, predicting the continuous level of affect of a person based on his or her
