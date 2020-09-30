@@ -49,7 +49,7 @@ delay = 2.8
 sr_labels = 0.04
 shift = int(np.round(delay/sr_labels))
 shift = np.ones(1,dtype=int)*shift
-path_features   = "/data/databases/Recola2016/features_audio/arousal/"
+path_features   = "/data//features_audio/arousal/"
 
 
 files_train = fnmatch.filter(os.listdir(path_features), "train*.csv")  # Filenames are the same for audio, video, text & labels
@@ -59,22 +59,21 @@ print "Loading features..."
 trainData   = load_all( files_train, [path_features], shift )
 develData   = load_all( files_devel, [path_features], shift )
 
-trainLabelsA1 = load_all( files_train, [ "/data/labels/A1/" ] )
-trainLabelsA2 = load_all( files_train, [ "/data/A2/" ] )
-trainLabelsA3 = load_all( files_train, [ "/data/A3/" ] )
-trainLabelsA4 = load_all( files_train, [ "/data/A4/" ] )
-trainLabelsA5 = load_all( files_train, [ "/data/A5/" ] )
-trainLabelsA6 = load_all( files_train, [ "/data/A6/" ] )
-trainLabelsGS = load_all( files_train, [ "/data/gold_standard/" ] )
+trainLabelsA1 = load_all( files_train, [ "/data/databases/Recola2016/labels/A1/" ] )
+trainLabelsA2 = load_all( files_train, [ "/data/databases/Recola2016/labels/A2/" ] )
+trainLabelsA3 = load_all( files_train, [ "/data/databases/Recola2016/labels/A3/" ] )
+trainLabelsA4 = load_all( files_train, [ "/data/databases/Recola2016/labels/A4/" ] )
+trainLabelsA5 = load_all( files_train, [ "/data/databases/Recola2016/labels/A5/" ] )
+trainLabelsA6 = load_all( files_train, [ "/data/databases/Recola2016/labels/A6/" ] )
+trainLabelsGS = load_all( files_train, [ "/data/databases/Recola2016/labels/gold_standard/" ] )
 
-develLabelsA1 = load_all( files_devel, [ "/data/A1/" ] )
-develLabelsA2 = load_all( files_devel, [ "/data/A2/" ] )
-develLabelsA3 = load_all( files_devel, [ "/data/A3/" ] )
-develLabelsA4 = load_all( files_devel, [ "/data/A4/" ] )
-develLabelsA5 = load_all( files_devel, [ "/data/A5/" ] )
-develLabelsA6 = load_all( files_devel, [ "/data/A6/" ] )
-develLabelsGS = load_all( files_devel, [ "/data/gold_standard/" ] )
-
+develLabelsA1 = load_all( files_devel, [ "/data/databases/Recola2016/labels/A1/" ] )
+develLabelsA2 = load_all( files_devel, [ "/data/databases/Recola2016/labels/A2/" ] )
+develLabelsA3 = load_all( files_devel, [ "/data/databases/Recola2016/labels/A3/" ] )
+develLabelsA4 = load_all( files_devel, [ "/data/databases/Recola2016/labels/A4/" ] )
+develLabelsA5 = load_all( files_devel, [ "/data/databases/Recola2016/labels/A5/" ] )
+develLabelsA6 = load_all( files_devel, [ "/data/databases/Recola2016/labels/A6/" ] )
+develLabelsGS = load_all( files_devel, [ "/data/databases/Recola2016/labels/gold_standard/" ] )
 
 print "Normalize data (0-1 normalization)..."
 minMaxScaler = MinMaxScaler()
