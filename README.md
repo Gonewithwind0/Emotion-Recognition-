@@ -1,0 +1,2 @@
+# Emotion-Recognition-
+t unimodal systems based on audio for continuous recognition of human affect. Automatic analysis of human affective state has increased popularity over the last few years. Particularly, predicting the continuous level of affect of a person based on his or her voice has higher performance in real-world experiments compared to discrete level of affect. However, the variation across different people i.e evaluators and subjects, along with variation across different audio capture condition, cause disparity in the annotation
