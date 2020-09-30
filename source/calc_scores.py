@@ -1,6 +1,3 @@
-#!/bin/python
-# python2.7
-# Contact: maximilian.schmitt@uni-passau.de
 
 import numpy as np
 
